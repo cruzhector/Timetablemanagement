@@ -1,0 +1,19 @@
+ <?php while($row = mysqli_fetch_array($table)) {
+ 
+ echo " <tr><form action=u1.php method=post>";
+    echo " <th style=background-color: #4CAF50;  color: white;><input type=text name=day value='"$row['sday']"'></th>";
+    echo " <td style=color: black;><input type=text name=pn1 value='"$row['p1']"'></td>";
+    echo " <td style=color: black;><input type=text name=pn2 value='"$row['p2']"'></td>";
+	echo "<td style=background-color: #6D3481; color: black;><input type=text name=pn3 value='"$row['p3']"'></td>";
+	echo "<td style=color: black;><input type=text name=pn4 value='"$row['p4']"'></td>";
+	echo "<td style=color: black;><input type=text name=pn5 value='"$row['p5']"'></td>";
+	echo "<td style=background-color: #6D3481; color: black;><input type=text name=pn6 value='"$row['p6']"'></td>";
+	echo "<td style=color: black;><input type=text name=pn7 value='"$row['p7']"'></td>";
+	echo "<td style=color: black;><input type=text name=pn8 value='"$row['p8']"'></td>" ;
+	echo "<td style=color: black;><input type=hidden name=no value='"$row['syear']"'></td>";
+	echo "<input class=btn inverse type=submit value=UPDATE>"
+  echo "</form></tr>";
+  
+  
+ }?>
+  <?php endwhile; ?>
